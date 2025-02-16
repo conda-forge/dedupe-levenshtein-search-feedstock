@@ -12,7 +12,7 @@ source:
 
 build:
   script: python -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -31,13 +31,14 @@ requirements:
 tests:
   - python:
       imports:
-      - Levenshtein_search
+        - Levenshtein_search
       pip_check: true
 
 about:
   homepage: https://github.com/dedupeio/Levenshtein_search
   summary: 'Python module to fuzzy search words in documents.'
-  description: Levenshtein_search is a Python module that stores any number of documents as ternary search trees. It performs fuzzy searches for words in a document that are d distance away from a query word. Searches can also be used in conjunction with TF-IDF calculations. The term frequency (TF) is computed for each approximately matching word in the document, as well as the Levenshtein distance from your query word. The module was written in C and increases search speed by using graph search algorithms and minimizing the number of redundant comparisons.
+  description: Levenshtein_search is a Python module that stores any number of documents as ternary search trees. It performs fuzzy searches for words in a document that are d distance away from a query word. Searches can also be used in conjunction with TF-IDF calculations. The term frequency (TF) is computed for each approximately
+    matching word in the document, as well as the Levenshtein distance from your query word. The module was written in C and increases search speed by using graph search algorithms and minimizing the number of redundant comparisons.
   license: MIT
   license_file: LICENSE
   repository: https://github.com/dedupeio/Levenshtein_search
